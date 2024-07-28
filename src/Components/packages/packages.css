@@ -1,0 +1,124 @@
+.packages {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .packages h4 {
+    color: #0096FF;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .packages h4::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    width: 25px;
+    height: 2px;
+    background-color: #0096FF;
+  }
+  
+  .packages h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .packages p {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .package-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .package-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .package-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .package-info {
+    padding: 15px;
+  }
+  
+  .location-rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .location, .rating {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .package-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .package-info p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .price-book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .book-now {
+    background-color: #ffffff;
+    color: rgb(1, 179, 233);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 1024px) {
+    .package-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .package-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .package-grid {
+      grid-template-columns: 1fr;
+    }
+  }

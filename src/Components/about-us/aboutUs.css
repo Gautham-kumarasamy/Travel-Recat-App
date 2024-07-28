@@ -1,0 +1,202 @@
+.about-us {
+  padding: 50px 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.about-content, .partner-content {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-left, .partner-content .content-right {
+  flex: 1;
+  max-width: 570px;
+}
+
+.content-left h4, .partner-content .content-right h4 {
+  color: #0096FF;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content-left h4::before, .partner-content .content-right h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #0096FF;
+  transform: translateY(-50%);
+}
+
+.content-left h2, .partner-content .content-right h2 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1E1E1E;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.content-left p, .partner-content .content-right li {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stat-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.stat-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0096FF;
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
+
+.about-content .content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-content .image-container {
+  width: 450px;
+  height: 450px;
+  background-color: #0096FF;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer-count {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tag {
+  position: absolute;
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.best-fun {
+  bottom: 20%;
+  left: 10%;
+}
+
+.best-adventures {
+  bottom: 10%;
+  right: 10%;
+}
+
+.trusted-partner {
+  margin-top: 50px;
+}
+
+.image-gallery {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  max-width: 50%;
+}
+
+.image-gallery .image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-gallery .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.secondary {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.tertiary {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.partner-content .content-right {
+  padding-left: 50px;
+}
+
+.partner-content .content-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cta-button {
+  background-color: #0096FF;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0077CC;
+}
